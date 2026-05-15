@@ -1,0 +1,17 @@
+1. Evidence from the end of the module Create a web API with ASP.NET Core controllers showing the existing content, and your additional record.
+
+- I created a word file for the evidence of my work.
+
+2. Summary Report of my working sales summary function for Part 2.
+
+- I created a sales summary feature in my ASP.NET Core application by adding a new endpoint called /generate-sales-summary in Program.cs. 
+When this endpoint is called, the program creates a SalesData folder and generates two sample sales files: one for the north store and one for the south store. 
+Each file contains several sales amounts formatted as currency values. After creating the files, the application calls the SalesSummaryReport.GenerateSalesSummaryReport() method to process the data and create a summary report.
+
+Inside the SalesSummaryReport class, the GenerateSalesSummaryReport() method reads all of the sales files and calculates the total sales for each store. 
+It uses the GetSalesTotalFromFile() method to read each line in the file, convert the text into decimal numbers, and add the values together. 
+The method also handles values that include dollar signs and commas, making the program flexible when reading different currency formats.
+
+After all totals are calculated, the program creates a report that shows the overall total sales and the individual totals for each file. 
+The report is saved as SalesSummaryReport.txt, then read back and returned as plain text in the browser. 
+This project helped me practice working with files, parsing currency values, calculating totals, and creating API endpoints in C#.

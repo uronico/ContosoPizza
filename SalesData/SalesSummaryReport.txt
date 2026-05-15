@@ -1,0 +1,7 @@
+Sales Summary
+----------------------------
+ Total Sales: $24,072.81
+
+ Details:
+  north-store-sales.txt: $7,037.01
+  south-store-sales.txt: $17,035.80
